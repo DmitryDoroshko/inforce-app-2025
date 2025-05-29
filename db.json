@@ -1,0 +1,109 @@
+{
+  "products": [
+    {
+      "id": "2",
+      "imageUrl": "https://placehold.co/600x400",
+      "name": "Product 2",
+      "count": 5,
+      "size": {
+        "width": 15,
+        "height": 25
+      },
+      "weight": "5 lbs",
+      "comments": [
+        {
+          "id": "3",
+          "description": "Comment for Product 2"
+        },
+        {
+          "id": "comment-1748533431614",
+          "productId": 2,
+          "description": "Comment another",
+          "date": "2025-05-29T15:43:51.611Z"
+        }
+      ]
+    },
+    {
+      "id": "34.79949026829687",
+      "count": "10",
+      "name": "Pizza1111",
+      "size": {
+        "width": 10,
+        "height": 20
+      },
+      "weight": "30g",
+      "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/classic-cheese-pizza-recipe-2-64429a0cb408b.jpg",
+      "comments": []
+    },
+    {
+      "id": "161",
+      "name": "Milk",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Glass_of_Milk_%2833657535532%29.jpg/960px-Glass_of_Milk_%2833657535532%29.jpg",
+      "count": "4",
+      "size": {
+        "width": 10,
+        "height": 15
+      },
+      "weight": "1000",
+      "comments": [
+        {
+          "id": "comment-1748534366931",
+          "productId": 161,
+          "description": "Nice milk",
+          "date": "2025-05-29T15:59:26.930Z"
+        }
+      ]
+    },
+    {
+      "id": "322",
+      "count": "12",
+      "name": "sdsdsd",
+      "size": {
+        "width": 5,
+        "height": 4
+      },
+      "weight": "30g",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Glass_of_Milk_%2833657535532%29.jpg/960px-Glass_of_Milk_%2833657535532%29.jpg",
+      "comments": []
+    },
+    {
+      "id": "730",
+      "name": "Cat",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4aBhloyMLx5qA6G6wSEi0s9AvDu1r7utrbQ&s",
+      "count": "1",
+      "size": {
+        "width": 6,
+        "height": 6
+      },
+      "weight": "2222",
+      "comments": [
+        {
+          "id": "comment-1748535966531",
+          "productId": 730,
+          "description": "Hi there",
+          "date": "2025-05-29T16:26:06.530Z"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "productId": null,
+      "description": "This is a comment for Product 1",
+      "date": "2024-02-24T08:00:00Z"
+    },
+    {
+      "id": "2",
+      "productId": null,
+      "description": "Another comment for Product 1",
+      "date": "2024-02-25T10:00:00Z"
+    },
+    {
+      "id": "3",
+      "productId": "2",
+      "description": "Comment for Product 2",
+      "date": "2024-02-26T12:00:00Z"
+    }
+  ]
+}

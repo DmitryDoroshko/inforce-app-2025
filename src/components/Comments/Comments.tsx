@@ -63,6 +63,18 @@ export function Comments({ comments, productId }: CommentsProps) {
     }
   };
 
+  const renderedComments = comments.map((comment, index) => (
+    <React.Fragment key={comment.id}>
+      <ListItem alignItems="flex-start">
+        <ListItemText
+          primary={comment.description || "No description"}
+          secondary={comment.date && new Date(comment.date).toLocaleDateString()}
+        />
+      </ListItem>
+      {index < comments.length - 1 && <Divider component="li" />}
+    </React.Fragment>
+  ));
+
   return (
     <Box>
       <Typography variant="h6" gutterBottom>Comments</Typography>
@@ -104,17 +116,7 @@ export function Comments({ comments, productId }: CommentsProps) {
         <Typography color="text.secondary" variant="body2">No comments available...</Typography>
       ) : (
         <List sx={{ width: "100%", bgcolor: "background.paper" }}>
-          {comments.map((comment, index) => (
-            <React.Fragment key={comment.id}>
-              <ListItem alignItems="flex-start">
-                <ListItemText
-                  primary={comment.description || "No description"}
-                  secondary={comment.date && new Date(comment.date).toLocaleDateString()}
-                />
-              </ListItem>
-              {index < comments.length - 1 && <Divider component="li" />}
-            </React.Fragment>
-          ))}
+          {renderedComments}
         </List>
       )}
     </Box>

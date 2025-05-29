@@ -60,9 +60,9 @@ export const addComment = createAsyncThunk(
         comments: [...product.comments, newComment]
       };
 
-      const result = await ProductService.updateProduct(productId, updatedProduct);
+      await ProductService.updateProduct(productId, updatedProduct);
       return { productId, comment: newComment };
-    } catch (error) {
+    } catch {
       return rejectWithValue("Failed to add comment");
     }
   }

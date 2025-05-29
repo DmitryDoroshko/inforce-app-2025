@@ -1,7 +1,13 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import type { IProduct } from "../../model/Product.ts";
-import type { IComment } from "../../model/Comment.ts";
-import { addProduct, deleteProduct, editProduct, fetchProductById, fetchProducts, addComment } from "./productsThunks.ts";
+import {
+  addComment,
+  addProduct,
+  deleteProduct,
+  editProduct,
+  fetchProductById,
+  fetchProducts,
+} from "./productsThunks.ts";
 import type { RootState } from "../index.ts";
 
 interface ProductsState {
